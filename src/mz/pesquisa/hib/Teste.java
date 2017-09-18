@@ -2,6 +2,8 @@
 package mz.pesquisa.hib;
 
 import javax.persistence.EntityManager;
+import org.hibernate.Session;
+import org.hibernate.Transaction;
 
 /**
  *
@@ -10,8 +12,11 @@ import javax.persistence.EntityManager;
 public class Teste {
     
     public static void main(String[] args) {
-        EntityManager
-        HibernateUtil h = new HibernateUtil();
+         
+        Session s = HibernateUtil.getSessionFactory().openSession();
+        Transaction t = s.beginTransaction();
+        
+        s.close();
         
         
     }
