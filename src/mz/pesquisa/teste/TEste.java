@@ -12,8 +12,7 @@ public class TEste {
      */
     public static boolean compara() {
         String strValue01 = "570";
-        String strValue02 = "5000";
-        
+        String strValue02 = "5000";        
         return strValue01.compareTo(strValue02) > 0;
     }
 
