@@ -46,5 +46,9 @@ Contributor(s):
     <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/aulashibernate?zeroDateTimeBehavior=convertToNull</property>
     <property name="hibernate.connection.username">aulashibernate</property>
     <property name="hibernate.connection.password">aulashibernate</property>
+    <property name="hibernate.show_sql">true</property>
+    <property name="hibernate.current_session_context_class">thread</property>
+    <property name="hibernate.hbm2ddl.auto">create</property>
+    <mapping class="mz.uem.poo.laboral.Pessoa"/>
   </session-factory>
 </hibernate-configuration>
