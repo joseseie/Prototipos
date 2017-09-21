@@ -12,6 +12,10 @@ import org.hibernate.Transaction;
  */
 public class Controlo {
     
+    public void menu(){
+        String str = "1- Registar todos\n";
+    }
+    
     public void addOjects(Session s, Transaction t){
         
         JOptionPane.showMessageDialog(null, "Crie os objectos, para terminar digite t");
@@ -40,6 +44,7 @@ public class Controlo {
         s.delete(s.get(Pessoa.class, id));
         return true;
     }
+    
     
     
     
