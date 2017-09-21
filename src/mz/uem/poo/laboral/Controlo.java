@@ -28,7 +28,7 @@ public class Controlo {
               
     }
     
-    public List<Pessoa> lerTodos(Session s, Transaction t){
+    public List<Pessoa> getAll(Session s, Transaction t){
         return s.createCriteria(Pessoa.class).list();
     }
     
