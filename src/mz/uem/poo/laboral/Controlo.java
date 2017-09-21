@@ -32,6 +32,11 @@ public class Controlo {
         return s.createCriteria(Pessoa.class).list();
     }
     
+    public boolean removeSome(Session s, Transaction t,int id){
+        s.delete(s.get(Pessoa.class, id));
+        return true;
+    }
+    
     
     
 }
