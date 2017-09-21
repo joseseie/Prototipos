@@ -1,6 +1,7 @@
 
 package mz.uem.poo.laboral;
 
+import java.util.List;
 import javax.swing.JOptionPane;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
@@ -27,8 +28,10 @@ public class Controlo {
               
     }
     
-    public void lerTodos(Session s, Transaction t){
-        
+    public List<Pessoa> lerTodos(Session s, Transaction t){
+        return s.createCriteria(Pessoa.class).list();
     }
+    
+    
     
 }
